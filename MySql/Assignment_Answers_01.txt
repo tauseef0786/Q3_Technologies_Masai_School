@@ -1,0 +1,180 @@
+Q 1.
+What does "relational" mean in the context of a relational database management system (RDBMS)? Explain with an example.
+
+Ans 1.
+The relational database management system(RDBMS) refers the way to store the data in tablular form that are relaate to all tables eachother.
+These tables have rows and columns to organizethe data in better form and relationships of all tables managed by key of tables .That keys are 
+allowing us to perform complex queries in simple way to get desire output.
+
+Example:
+In e-commerce database let suppose there is two tables;
+    Customers table: Contains customer details such as customer_id, name, and email.
+    Orders table: Contains order details such as order_id, customer_id, product_id, and order_date.
+The customer_id field in the Orders table is a foreign key that links to the customer_id in the Customers table, establishing a relationship between the two tables. 
+
+
+Q 2.
+Explain the role of keys in relational databases. What is the difference between a primary key and a foreign key?
+
+Ans 2.
+We are using keys in our database tables as a unique identifier that records and establish relationships between tables in relational databases.That keys are 
+helping us to maintaing data integrity make it easy our queries to search data as per requirment output .
+Primary Key: A primary key is a unique identifier for each record in a table. It must contain unique values, and it cannot be NULL.
+
+Example:
+The customer_id in the Customers table is a primary key because each customer has a unique identifier.
+Foreign Key: A foreign key is a field in one table that is linked to the primary key of another table. In the ecommerce database we have customer_id in 
+customer table and customer_id we have in orders table so in order table customer_id is a foreign key .
+
+Q 3.
+What are the four ACID properties in databases? Explain each property with an example.
+
+Ans 3.
+The ACID properties helping us in databse transactions.its ensuring that transactionsare processed reliably and its remains consistent.
+Atomicity: 
+Its ensuring that our transactions is either fully completed or not executedat all. if any part of process fails during transactions, the entire 
+transaction is rolled back it will not process further .
+Example:
+In a net banking money transfer both debit and credit operations must either succeed or fail.
+Consistency:
+Its ensuring that our transactions in the database is one valid state for another , its maintaing integrity and correctness.
+Example: 
+If a bank account has a rule that it cannot make transaction above 100k, a transaction that would result in a above transaction will be rejected.
+Isolation: 
+Its ensuring that transactions are executed independently, so that transactions do not interfere with each other and we have data for each transactions eaither failed or succeed.
+Example: 
+If two users are trying to withdraw money from the same account simultaneously, isolation ensures that one transaction is completed before the other begins.
+Durability: 
+Its ensuring that once a transaction is committed, it will persist, even in the event of a system crash or failure.
+Example: 
+After transferring funds, the transaction record is written to disk and remains there even if the system crashes.
+
+Q 4: 
+What are the key differences between SQL and NoSQL databases? When would you prefer to use each?
+
+Ans 4:
+SQL and NoSQL databases are both used to store data, but they differ in structure, scalability, storage models, and use cases.
+
+SQL Databases:
+Structured(pre difined structure), relational databases that store data in tables with fixed schemas.
+Use SQL for querying.
+Follow a vertical (scale-up) storage model, meaning they scale by increasing the resources (CPU, RAM, storage) of a single machine.
+Suitable for applications with structured data and complex relationships, such as financial applications.
+Example: MySQL, PostgreSQL.
+
+NoSQL Databases:
+Non-relational, flexible schema databases that store data in formats like key-value, document, graph, or columnar.
+Suitable for handling large volumes of unstructured or semi-structured data.
+Follow a horizontal (scale-out) storage model, meaning they scale by distributing data across multiple machines (sharding).
+Ideal for applications that require scalability, flexibility, or fast data access.
+Example: MongoDB, Cassandra.
+
+Q 5:
+Describe the purpose of MySQL Workbench. What are its primary features?
+MySQL Workbench is a visual tool for design database administration and queries.Its providing us user-friendly interface(UI) to work 
+with MySQL database and simplifies various database tasks and queries. 
+
+Primary Features:
+
+Query Editor: 
+Allows users to write and execute SQL queries with syntax highlighting and autocompletion.
+Database Design: 
+Enables users to design and visualize database schemas using Entity-Relationship (ER) diagrams.
+Server Administration: 
+Helps configure and manage MySQL servers, users, and security.
+Performance Monitoring: 
+Provides tools for analyzing the performance of SQL queries and optimizing them.
+Backup and Restore: 
+Allows users to back up databases and restore them when necessary.
+
+Q6: 
+What is normalization in databases? Why is it important, and what are the different normal forms?
+
+Ans 6:
+Normalization is the process of organizing our data in a database to minimize redundancy and dependency. The goal is to reduce the amount of repetitive data and ensure data integrity.
+Importance:
+Reduces duplicate data
+Improves data consistency.
+Making easier minor to our database 
+
+Normal Forms:
+1NF (First Normal Form): Ensures that all columns contain atomic (indivisible) values and that there are no repeating groups of data.
+2NF (Second Normal Form): Eliminates partial dependencies, meaning that non-key columns are fully dependent on the primary key.
+3NF (Third Normal Form): Removes transitive dependencies, meaning non-key columns should not depend on other non-key columns.
+BCNF (Boyce-Codd Normal Form): A stricter version of 3NF that handles certain exceptions.
+
+
+Q 7: 
+What are the main advantages of using NoSQL databases for modern applications? Provide examples of use cases.
+
+Ans 7:
+NoSQL databases are highly flexible and designed to handle modern applications with large-scale, high-volume, and unstructured data.
+
+Advantages:
+Scalability: NoSQL databases are designed to scale horizontally, meaning they can handle large amounts of data and high traffic by adding more servers.
+Flexibility: NoSQL databases don't require a fixed schema, making them ideal for applications with evolving data structures.
+High Availability: Most NoSQL databases are designed to be highly available, even in the event of system failures.
+
+Social Media Platforms: NoSQL is great for managing social media data, such as user profiles, posts, and messages (e.g., MongoDB).
+
+Q 8: 
+Explain the concept of a "transaction" in a relational database. Why is it important to ensure transactions follow ACID properties?
+
+Ans 8:
+A transaction in a relational database is a set of one or more operations that are executed as a single unit of work. A transaction ensures that either all operations are successfully completed or none are applied, maintaining database integrity.
+
+Importance of ACID Properties:
+Atomicity: 
+Its ensuring that our transactions is either fully completed or not executedat all. if any part of process fails during transactions, the entire 
+transaction is rolled back it will not process further .
+Consistency:
+Its ensuring that our transactions in the database is one valid state for another , its maintaing integrity and correctness.
+Isolation: 
+Its ensuring that transactions are executed independently, so that transactions do not interfere with each other and we have data for each transactions eaither failed or succeed.
+Durability: 
+Its ensuring that once a transaction is committed, it will persist, even in the event of a system crash or failure.
+
+Without ACID properties, transactions could lead to inconsistent or corrupt data in the database.
+
+Q 9: 
+What is the purpose of indexing in MySQL databases? How does it improve query performance?
+
+Ans 9:
+Indexing is the process of creating data structures in accending or decending that allow for faster data retrieval. It works by creating a map or pointer to data rows, making faster to search any Data.
+Improving Query Performance:
+Indexes significantly reduce the amount of data MySQL has to scan when executing queries, especially on large datasets.
+They speed up read-heavy operations, such as SELECT queries, by providing a fast lookup for columns used in WHERE, JOIN, and ORDER BY clauses.
+
+
+Q 10: 
+What are the benefits of using foreign keys in relational databases? How do foreign keys help maintain data integrity?
+
+Ans 10: 
+Foreign keys are used to establish relationships between twon tables They ensure that data is consistent across tables by making sure that every foreign key value corresponds to a valid primary key in another table.
+Benefits:
+Foreign keys is records by ensuring that no record in the child table exists without a corresponding record in the parent table.
+They help maintain data and relationship between two table and more than two table link customer table to order table then only we can identify 
+who ordered which product.
+
+
+Q 11: 
+Explain the concept of "data consistency" in relational databases. How does the ACID property of Consistency ensure data integrity?
+
+Ans 11:
+Data consistency ensures that the database remains in a valid state before and after a transaction. Consistency ensures that any transaction brings the database from one valid state to another.
+
+ACID and Consistency:
+
+The Consistency property of ACID guarantees that any transaction will not violate database rules, such as constraints or business logic. If a transaction would result in an inconsistent state, it will be rejected.
+Example: In a banking system, a transaction that would cause an account balance to go below zero would be rejected to maintain consistency.
+
+Q 12: 
+How can MySQL ensure that a CSV file is successfully imported using the LOAD DATA INFILE statement? Mention common errors that can occur and how to resolve them.
+
+Ans 12:
+The LOAD DATA INFILE statement in MySQL imports CSV files into a database table by mapping the CSV file's contents to the columns in the specified table. To ensure successful import, the file path must be correct, and the file must be accessible to MySQL.
+Common Errors:
+File not found: Ensure the file path is correct and accessible.
+Field terminator mismatch:
+Data type mismatch: 
+Extra or missing columns: 
