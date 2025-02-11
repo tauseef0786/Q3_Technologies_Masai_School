@@ -1,0 +1,41 @@
+
+<------------ Easy SQL Questions (5-6 questions)----------------->
+
+SELECT StudentID,(MathScore + ScienceScore) AS TotalScore FROM StudentScores;
+
+SELECT StudentID,(TotalClasses - DaysAbsent) AS ClassesAttended FROM StudentScores;
+
+SELECT StudentID,((TotalClasses - DaysAbsent) * 2) AS TotalStudyHours FROM StudentScores;
+
+SELECT StudentID,((MathScore + ScienceScore) / 2) AS AverageScore FROM StudentScores;
+
+SELECT StudentID,(MathScore + ScienceScore) AS TotalScore FROM StudentScores WHERE (MathScore + ScienceScore) > 160;
+
+SELECT StudentID FROM StudentScores WHERE (TotalClasses - DaysAbsent) > 25;
+
+
+<------------- Medium Difficult y SQL Questions (4 questions)-------------->
+
+SELECT ProductID, ProductName, Price - (Price * Discount / 100) AS DiscountedPrice
+FROM Products
+WHERE (Price - (Price * Discount / 100)) > 15;
+
+SELECT *,  (Price * Quantity) AS TotalInventoryValue
+FROM Products
+WHERE (Price * Quantity) > 600;
+
+SELECT *, (Price - (Price * Discount / 100)) AS DiscountedPrice
+FROM Products
+WHERE (Price - (Price * Discount / 100)) < 10;
+
+SELECT *, (Price - (Price * Discount / 100)) AS DiscountedPrice
+FROM Products
+WHERE (Price - (Price * Discount / 100)) BETWEEN 5 AND 15;
+
+
+
+<------------- Hard SQL Questions (2 questions)--------------->
+
+SELECT *, (MathScore + ScienceScore) AS TotalScore, (TotalClasses - DaysAbsent) AS ClassesAttended
+FROM StudentScores
+WHERE (TotalClasses - DaysAbsent) = (SELECT MAX(TotalClasses - DaysAbsent) FROM StudentScores);
