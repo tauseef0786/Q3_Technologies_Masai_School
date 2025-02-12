@@ -1,0 +1,66 @@
+Ans Number baised
+
+Ans 1:
+True
+
+Ans 2:
+C is largest
+
+Ans 3:
+ThreeFour
+
+Ans 4:
+World
+
+Ans 5:
+true
+
+Ans 6:
+B
+
+Ans 7:
+X
+
+Ans 8:
+5 10
+
+Ans 9:
+Not Equal
+
+Ans 10:
+Equal
+
+Ans 11:
+1 2 3 4 5
+
+Ans 12:
+5 4 3 2 1
+
+Ans 13:
+1 2 4 5 
+
+Ans 14:
+1 2 
+
+Ans 15:
+1 2 3
+
+Ans 16:
+1 2 3
+
+Ans 17:
+5
+
+Ans 18:
+Ans 19:
+Ans 20:
+Ans 21:
+Ans 22:
+Ans 23:
+Ans 24:
+Ans 25:
+Ans 26:
+Ans 27:
+Ans 28:
+Ans 29:
+Ans 30:
