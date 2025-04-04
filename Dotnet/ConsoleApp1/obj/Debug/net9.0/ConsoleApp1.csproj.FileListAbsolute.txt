@@ -1,0 +1,15 @@
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.deps.json
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.runtimeconfig.json
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.dll
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.pdb
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfoInputs.cache
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfo.cs
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.sourcelink.json
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.dll
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/refint/ConsoleApp1.dll
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.pdb
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.genruntimeconfig.cache
+/Users/mdtauseefraza/Masai School/Q3_Technologies_Masai_School/Dotnet/ConsoleApp1/obj/Debug/net9.0/ref/ConsoleApp1.dll
